@@ -3,7 +3,9 @@ BatJump, a simple game to the OGA Spring 2021 Game Jam
 
 Linux and Windows
 
+Download the JAM version:
 
+https://github.com/Can202/BatJump/releases/tag/jam - GitHub
 
 Credits:
 
