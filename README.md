@@ -4,7 +4,14 @@ BatJump, a simple game to the OGA Spring 2021 Game Jam
 Linux and Windows
 
 
+
 Credits:
+
+Can202(me):
+itch.io user: https://can202.itch.io/
+OGA user: https://opengameart.org/users/can202
+
+OpenGameArt Credits:
 
 1. 
 Name: Bat https://opengameart.org/content/bat
