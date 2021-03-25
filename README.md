@@ -8,8 +8,12 @@ Linux and Windows
 Credits:
 
 Can202(me):
+
 itch.io user: https://can202.itch.io/
+
+
 OGA user: https://opengameart.org/users/can202
+
 
 OpenGameArt Credits:
 
