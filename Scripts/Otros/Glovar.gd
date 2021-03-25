@@ -8,6 +8,7 @@ var PathFollowPosition = Vector2()
 var Score = 0
 var BestScore = 0
 var perder = false
+var trajedeCO = false
 
 
 # Called when the node enters the scene tree for the first time.

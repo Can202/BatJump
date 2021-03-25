@@ -10,6 +10,15 @@ var traje = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Glovar.trajedeCO == false:
+		Glovar.trajedeCO = true
+		$AnimatedSprite.animation = "1"
+		$CollisionShape2D.scale.y = 1
+	else:
+		Glovar.trajedeCO = false
+		$AnimatedSprite.animation = "2"
+		$CollisionShape2D.scale.y = 0.8
+	
 	position = Glovar.PathFollowPosition
 	
 

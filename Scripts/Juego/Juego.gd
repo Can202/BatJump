@@ -21,10 +21,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Glovar.Score >= 25 and Glovar.Score <= 49:
+	if Glovar.Score >= 10 and Glovar.Score <= 24:
+		$timetospawn.wait_time = 1.8
+	elif Glovar.Score >= 25 and Glovar.Score <= 49:
 		$timetospawn.wait_time = 1.5
 	elif Glovar.Score >= 50:
-		$timetospawn.wait_time = 1
+		$timetospawn.wait_time = 1.3
 	if Input.is_action_just_pressed("scape"):
 		get_tree().change_scene("res://Escenas/Menus/Menú.tscn")
 	$Score.text = str(Glovar.Score)
