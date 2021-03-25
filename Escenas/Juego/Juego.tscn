@@ -56,8 +56,15 @@ tracks/0/keys = {
 script = ExtResource( 2 )
 cavethings = ExtResource( 4 )
 
-[node name="back" type="Sprite" parent="."]
-scale = Vector2( 2.42855, 2.42855 )
+[node name="parallax" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2( 640, 0 )
+scroll_limit_begin = Vector2( 640, 0 )
+
+[node name="layer" type="ParallaxLayer" parent="parallax"]
+motion_mirroring = Vector2( 640, 0 )
+
+[node name="back" type="Sprite" parent="parallax/layer"]
+scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 3 )
 centered = false
 
@@ -113,6 +120,7 @@ anims/end = SubResource( 4 )
 anims/start = SubResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="Animation"]
+visible = false
 position = Vector2( 136, 72 )
 scale = Vector2( 5.25, 3.25 )
 texture = ExtResource( 7 )

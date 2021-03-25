@@ -10,6 +10,8 @@ var anim = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$timetospawn.wait_time = 2
+	$Animation/Sprite.show()
 	$Animation.current_animation = "start"
 	$music.play()
 	Glovar.Score = 0
@@ -19,12 +21,16 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Glovar.Score >= 25 and Glovar.Score <= 49:
+		$timetospawn.wait_time = 1.5
+	elif Glovar.Score >= 50:
+		$timetospawn.wait_time = 1
 	if Input.is_action_just_pressed("scape"):
 		get_tree().change_scene("res://Escenas/Menus/Menú.tscn")
 	$Score.text = str(Glovar.Score)
-	#$back.position.x -= 100 * delta
-	#if $back.position.x <= -480:
-	#	$back.position.x = 0
+	$parallax/layer/back.position.x -= 20 * delta
+	if $parallax/layer/back.position.x <= -480:
+		$parallax/layer/back.position.x = 0
 	if Glovar.perder == true:
 		$Animation.current_animation = "end"
 		anim = 1
