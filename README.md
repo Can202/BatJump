@@ -1,6 +1,9 @@
 # BatJump
 BatJump, a simple game to the OGA Spring 2021 Game Jam
 
+Linux and Windows
+
+
 Credits:
 
 1. 
@@ -32,3 +35,15 @@ Name: Medieval https://opengameart.org/content/medieval
 Author: Miguel Herrero http://www.jamendo.com/de/artist/miguel.herrero (Submitted by remaxim https://opengameart.org/users/remaxim )
 License: CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/
 Attribution: Medieval by Miguel Herrero (Submitted by remaxim) https://opengameart.org/content/medieval
+
+6. 
+Name: Spell 4 Fire https://opengameart.org/content/spell-4-fire
+Author: bart https://opengameart.org/users/bart
+License: CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/
+Attribution: Spell 4 Fire by bart https://opengameart.org/content/spell-4-fire
+
+7. 
+Name: 16 Button Clicks https://opengameart.org/content/16-button-clicks
+Author: Independent.nu https://web.archive.org/web/20100307021017/http://www.johannespinter.com/inu/ljudbank.htm (Submitted by qubodup https://opengameart.org/users/qubodup )
+License: CC0 http://creativecommons.org/publicdomain/zero/1.0/
+Attribution: (Modified by me) 16 Button Clicks by Independent.nu (Submitted by qubodup) https://opengameart.org/content/16-button-clicks
