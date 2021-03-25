@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Textures/Seamless Cave In Parts/background.png" type="Texture" id=1]
 [ext_resource path="res://Textures/Pixel Font/pixel font.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Textures/My Textures/exit.png" type="Texture" id=5]
 [ext_resource path="res://Textures/My Textures/black.png" type="Texture" id=6]
 [ext_resource path="res://Escenas/Otros/Guardar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Textures/Spell 4 Fire/foom_0.wav" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -186,6 +187,12 @@ scale = Vector2( 6.75, 3.75 )
 texture = ExtResource( 6 )
 
 [node name="Guardar" parent="." instance=ExtResource( 7 )]
+
+[node name="sfx" type="Node" parent="."]
+
+[node name="one" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 8 )
+volume_db = -20.0
 [connection signal="pressed" from="TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 [connection signal="animation_finished" from="Animation" to="." method="_on_Animation_animation_finished"]

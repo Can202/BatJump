@@ -19,6 +19,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Input.is_action_just_pressed("scape"):
+		get_tree().change_scene("res://Escenas/Menus/Menú.tscn")
 	$Score.text = str(Glovar.Score)
 	#$back.position.x -= 100 * delta
 	#if $back.position.x <= -480:

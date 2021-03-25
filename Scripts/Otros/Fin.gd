@@ -27,11 +27,13 @@ func _process(delta):
 		get_tree().change_scene("res://Escenas/Juego/Juego.tscn")
 
 func _on_Restart_pressed():
+	$sfx/one.play()
 	$AnimationPlayer.current_animation = "end"
 	accion = 2
 
 
 func _on_Menu_pressed():
+	$sfx/one.play()
 	$AnimationPlayer.current_animation = "end"
 	accion = 1
 

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Clic03.mp3.wav-772e78dc4fb62fefefe51125180f2a82.sample"
+
+[deps]
+
+source_file="res://Textures/16 button clicks/independent_nu_ljudbank-buttons_and_clicks/buttons_and_clicks/modified/Clic03.mp3.wav"
+dest_files=[ "res://.import/Clic03.mp3.wav-772e78dc4fb62fefefe51125180f2a82.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

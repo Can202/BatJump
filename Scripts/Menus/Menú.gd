@@ -24,6 +24,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("space"):
 		anim = 1
 		$Animation.current_animation = "end"
+		$sfx/one.play()
 
 
 func _on_Exit_pressed():
@@ -33,6 +34,7 @@ func _on_Exit_pressed():
 func _on_TouchScreenButton_pressed():
 	anim = 1
 	$Animation.current_animation = "end"
+	$sfx/one.play()
 	
 
 

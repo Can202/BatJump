@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Textures/My Textures/menu.png" type="Texture" id=1]
 [ext_resource path="res://Textures/My Textures/restart.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Textures/Pixel Font/pixel font.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Textures/My Textures/black.png" type="Texture" id=6]
 [ext_resource path="res://Escenas/Otros/Guardar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Textures/16 button clicks/independent_nu_ljudbank-buttons_and_clicks/buttons_and_clicks/modified/Clic03.mp3.wav" type="AudioStream" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -101,6 +102,12 @@ scale = Vector2( 5.125, 3.125 )
 texture = ExtResource( 6 )
 
 [node name="Guardar" parent="." instance=ExtResource( 7 )]
+
+[node name="sfx" type="Node2D" parent="."]
+
+[node name="one" type="AudioStreamPlayer2D" parent="sfx"]
+stream = ExtResource( 8 )
+volume_db = -10.0
 [connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="Menu" to="." method="_on_Menu_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

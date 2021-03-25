@@ -22,9 +22,11 @@ func _process(delta):
 		$AnimatedSprite.flip_v = true
 		move.y += -150 * delta
 	if Input.is_action_just_pressed("ui_up"):
+		$music/one.play()
 		down = true
 		move.y = -jump_force
 	if Input.is_action_just_pressed("ui_down"):
+		$music/one.play()
 		down = false
 		move.y = jump_force
 	
@@ -33,6 +35,7 @@ func _process(delta):
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("cavethings"):
+		$music/two.play()
 		$Animation.current_animation = "end"
 		Glovar.perder = true
 	if area.is_in_group("punto"):
