@@ -11,6 +11,8 @@ Credits:
 
 Can202(me):
 
+GitHub user: https://github.com/Can202
+
 itch.io user: https://can202.itch.io/
 
 
