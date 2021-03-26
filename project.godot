@@ -28,8 +28,9 @@ _global_script_class_icons={
 
 config/name="BatJump"
 run/main_scene="res://Escenas/Menus/Menú.tscn"
-boot_splash/image="res://Textures/oga-spring-2021-game-jam-banner/spring_2021_game_jam_banner.png"
-config/icon="res://icon.png"
+boot_splash/image="res://Textures/oga-spring-2021-game-jam-banner/2spring_2021_game_jam_banner.png"
+config/icon="res://icon/icon.png"
+config/windows_native_icon="res://icon/iconwin.ico"
 
 [autoload]
 
