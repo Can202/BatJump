@@ -8,7 +8,11 @@ Download the JAM version:
 
 https://github.com/Can202/BatJump/releases/tag/jam - GitHub
 
+https://can202.itch.io/batjump - itch.io
+
 Play without downloading:
+
+https://www.newgrounds.com/portal/view/786989 - Newgrounds
 
 https://can202.itch.io/batjump - itch.io
 
