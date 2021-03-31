@@ -5,7 +5,13 @@ Linux and Windows
 
 Download the JAM version:
 
+
 https://github.com/Can202/BatJump/releases/tag/jam - GitHub
+
+Play without downloading:
+
+https://can202.itch.io/batjump - itch.io
+
 
 Credits:
 
