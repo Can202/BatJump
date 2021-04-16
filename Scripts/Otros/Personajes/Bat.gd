@@ -21,11 +21,13 @@ func _process(delta):
 	else:
 		$AnimatedSprite.flip_v = true
 		move.y += -150 * delta
-	if Input.is_action_just_pressed("ui_up"):
+	if Input.is_action_just_pressed("ui_up") or Glovar.movetouch == 1:
+		Glovar.movetouch = 0
 		$music/one.play()
 		down = true
 		move.y = -jump_force
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_just_pressed("ui_down") or Glovar.movetouch == -1:
+		Glovar.movetouch = 0
 		$music/one.play()
 		down = false
 		move.y = jump_force

@@ -54,3 +54,12 @@ func _on_Animation_animation_finished(anim_name):
 	if anim == 1:
 		get_tree().change_scene("res://Escenas/Otros/Fin/Fin.tscn")
 		anim = 0
+
+
+func _on_up_pressed():
+	Glovar.movetouch = 1
+
+
+func _on_down_pressed():
+	Glovar.movetouch = -1
+

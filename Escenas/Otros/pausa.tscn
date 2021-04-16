@@ -1,11 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Otros/pausa.gd" type="Script" id=1]
 [ext_resource path="res://Textures/Pixel Font/pixel font.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Textures/My Textures/menu.png" type="Texture" id=3]
+[ext_resource path="res://Textures/My Textures/exit.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
 font_data = ExtResource( 2 )
+
+[sub_resource type="RectangleShape2D" id=2]
 
 [node name="pausa" type="Node2D"]
 pause_mode = 2
@@ -39,3 +43,16 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="button" type="TouchScreenButton" parent="."]
+normal = ExtResource( 3 )
+shape = SubResource( 2 )
+
+[node name="exit" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 20, 0 )
+scale = Vector2( 0.75, 0.75 )
+normal = ExtResource( 4 )
+shape = SubResource( 2 )
+[connection signal="pressed" from="button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

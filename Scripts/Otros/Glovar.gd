@@ -9,6 +9,7 @@ var Score = 0
 var BestScore = 0
 var perder = false
 var trajedeCO = false
+var movetouch = 0
 
 
 # Called when the node enters the scene tree for the first time.
