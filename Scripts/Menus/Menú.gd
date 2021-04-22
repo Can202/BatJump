@@ -42,3 +42,7 @@ func _on_Animation_animation_finished(anim_name):
 	if anim == 1:
 		get_tree().change_scene("res://Escenas/Juego/Juego.tscn")
 	anim = 0
+
+
+func _on_TouchScreenButton2_pressed():
+	OS.window_fullscreen = !OS.window_fullscreen
