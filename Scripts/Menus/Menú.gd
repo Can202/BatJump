@@ -21,6 +21,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if OS.window_fullscreen == true:
+		$fs/sprite.animation = "min"
+	else:
+		$fs/sprite.animation = "full"
+	
 	if Input.is_action_just_pressed("space"):
 		anim = 1
 		$Animation.current_animation = "end"
